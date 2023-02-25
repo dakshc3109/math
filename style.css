@@ -1,0 +1,82 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#head{
+    text-align: center;
+    font-family: Arial, 
+    Helvetica, sans-serif;
+    background: linear-gradient(#4c08eb, #086bff,
+        #2390cf, #06e7e7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#on {
+    --c:  #229091;
+
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+        var(--_g) calc(var(--_p,0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p,0%)) 0%,
+        var(--_g) calc(var(--_p,0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+}
+#on:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+}
+#on:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+}
+
+#on {
+    font-family: system-ui, sans-serif;
+    font-size: 3.5rem;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;  
+    border: none;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+#don {
+    --c:  #229091;
+
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+        var(--_g) calc(var(--_p,0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p,0%)) 0%,
+        var(--_g) calc(var(--_p,0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+}
+#don:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+}
+#don:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+}
+
+#don {
+    font-family: system-ui, sans-serif;
+    font-size: 3.5rem;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;  
+    border: none;
+    margin-left: 500px;
+    margin-top: 200px;
+}
